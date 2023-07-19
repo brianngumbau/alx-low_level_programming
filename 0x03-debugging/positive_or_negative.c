@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * positive_or_negative - tests if integer is positive or negative
+ * @i: integer to be tested
+ */
 
 void positive_or_negative(int i)
 {
