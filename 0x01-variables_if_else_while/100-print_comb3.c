@@ -10,26 +10,22 @@ int main(void)
 
 	while (i <= '9')
 	{
-		while (i <= '9')
+		if (!(i > j) || i == j)
 		{
-			if (!(i > j) || i == j)
+			putchar(i);
+			putchar(j);
+			if (i == '8' && j == '9')
 			{
-				putchar(i);
-				putchar(j);
-				if (i == '8' && j == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar('\n');
 			}
-j++;
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-j = '0';
-i++;
+		j++;
 	}
-return (0);
+	i++;
+	return (0);
 }
