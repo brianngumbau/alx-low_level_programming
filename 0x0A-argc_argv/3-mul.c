@@ -6,7 +6,7 @@
  * main - multiplies 2 numbers
  * @argc: argument count
  * @argv: argument vector
- * Retun: 0
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
