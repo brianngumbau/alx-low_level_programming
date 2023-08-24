@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 #include <string.h>
 /**
  * main - prints the sum of args positive numbers
  * @argc: argument count
  * @argv: argument vector
+ *
  * Return: 0
  */
 int main(int argc, char *argv[])
@@ -27,6 +29,7 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
+
 			sum += atoi(c);
 			c++;
 		}
