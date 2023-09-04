@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
  * @st: descriptor of file to be opened
  * @filename: name of file
  * @mode: closing or opening
- * @f: file descriptor
+ * @fd: file descriptor
  * Return: empty
  */
 void check_IO(int st, int fd, char *filename, char mode)
@@ -60,8 +60,7 @@ void check_IO(int st, int fd, char *filename, char mode)
 	}
 	else if (mode == 'W' && st == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write t0 %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 }
-
