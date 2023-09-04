@@ -1,6 +1,6 @@
 #include "main.h"
 
-void check_IO(int st, int f, char *filename, char mode);
+void check_IO(int st, int fd, char *filename, char mode);
 /**
  * main - copies the content of one file to another
  * @argc: argument count
@@ -46,11 +46,11 @@ int main(int argc, char *argv[])
  * @f: file descriptor
  * Return: empty
  */
-void check_IO(int st, int f, char *filename, char mode)
+void check_IO(int st, int fd, char *filename, char mode)
 {
 	if (mode == 'C' && st == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close f %d\n", f);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	else if (mode == 'o' && st == -1)
