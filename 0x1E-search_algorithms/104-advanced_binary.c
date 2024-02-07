@@ -19,7 +19,7 @@ int advanced_binary_rec(int *array, size_t size, int value)
 	printf("Searching in array");
 
 	for (a = 0; a < size; a++)
-		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+		printf("%s %d", (a == 0) ? ":" : ",", array[a]);
 
 	printf("\n");
 
